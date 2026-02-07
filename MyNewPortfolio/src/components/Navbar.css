@@ -1,0 +1,43 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Pushes logo and links apart */
+  align-items: center;            /* Centers items vertically */
+  padding: 1rem 5%;               /* 5% padding keeps it away from screen edges */
+  background-color: #1a1a1a;      /* Dark background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;               /* Stays at the top when you scroll */
+  top: 0;
+  z-index: 1000;                  /* Ensures it stays above other content */
+}
+
+/* Logo Styling */
+.logo img {
+  height: 50px;                   /* Adjust based on your logo shape */
+  width: auto;
+  display: block;
+}
+
+/* Links Container */
+.nav-links {
+  display: flex;
+  list-style: none;               /* Removes the bullet points */
+  gap: 2rem;                      /* Space between links */
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual Links */
+.nav-links a {
+  text-decoration: none;          /* Removes the underline */
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;    /* Smooth color change on hover */
+}
+
+/* Hover Effect */
+.nav-links a:hover {
+  color: #646cff;                 /* Vite-purple color (or pick your brand color) */
+}

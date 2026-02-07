@@ -1,0 +1,78 @@
+.services-container {
+  padding: 5rem 10%;
+  background-color: #0f172a; /* Dark theme consistency */
+  color: white;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.services-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #646cff;
+}
+
+/* The Grid */
+.services-grid {
+  display: grid;
+  /* Creates 2 columns on desktop, 1 on mobile */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Individual Service Cards */
+.service-card {
+  background: #1e293b;
+  padding: 2.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect: Card lifts and border glows */
+.service-card:hover {
+  transform: translateY(-10px);
+  background: #25334a;
+  border-color: #646cff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.service-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #f8fafc;
+}
+
+.service-card p {
+  color: #94a3b8;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Optional: Add a small accent line under the title */
+.service-card h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #646cff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Responsive: Ensures it looks good on tablets */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}
