@@ -1,9 +1,12 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
-import Projects from "./pages/ProjectsTemp.jsx";
+import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
 import Services from "./pages/Services.jsx";
 import Navbar from "./components/Navbar.jsx";
+
 
 function App() {
   return (
