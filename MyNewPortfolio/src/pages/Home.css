@@ -1,0 +1,52 @@
+.hero {
+  height: 90vh; /* Takes up most of the screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.highlight {
+  color: #646cff; /* Vite purple or your brand color */
+}
+
+.hero-content h2 {
+  font-size: 1.8rem;
+  color: #94a3b8; /* Muted gray-blue */
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.mission {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* The Button */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #535bf2;
+  transform: translateY(-3px); /* Lifts the button slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

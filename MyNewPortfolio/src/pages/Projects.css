@@ -1,0 +1,67 @@
+.projects {
+  padding: 4rem 5%;
+  background-color: #0f172a; /* Matching your theme */
+  color: white;
+  text-align: center;
+}
+
+.projects h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+/* The Grid Container */
+.projects-grid {
+  display: grid;
+  /* This creates columns that auto-fit the screen width */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Project Cards */
+.project-card {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden; /* Keeps image corners rounded */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  border-color: #646cff;
+}
+
+/* Project Images */
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Prevents images from looking squished */
+  border-bottom: 2px solid #646cff;
+}
+
+/* Text Content Inside Cards */
+.project-card h3 {
+  padding: 1.5rem 1.5rem 0.5rem;
+  margin: 0;
+  color: #f8fafc;
+}
+
+.project-card p {
+  padding: 0 1.5rem 1rem;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex-grow: 1; /* Ensures text takes up space equally */
+}
+
+.project-card strong {
+  color: #646cff;
+}

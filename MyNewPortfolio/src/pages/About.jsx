@@ -1,3 +1,4 @@
+import "./About.css";
 import myPhoto from "../assets/myPhoto.png";
 import resumePDF from "../assets/MyResume.pdf";
 
