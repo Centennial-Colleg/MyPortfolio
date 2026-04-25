@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { createUser } from "../api.js";
-import "./Contact.css";
 
 function Contact() {
   const [form, setForm] = useState({

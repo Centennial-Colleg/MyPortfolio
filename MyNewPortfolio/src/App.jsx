@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from "./context/AuthContext.jsx";
+import './App.css';
 import Home from "./pages/Home.jsx";
 import About from "./pages/About.jsx";
 import ProjectsList from "./pages/ProjectsList.jsx";

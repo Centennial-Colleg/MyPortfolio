@@ -40,3 +40,994 @@
 .read-the-docs {
   color: #888;
 }
+
+/* ===== PROJECTS PAGE STYLES ===== */
+.projects {
+  padding: 4rem 5%;
+  background-color: #0f172a; /* Matching your theme */
+  color: white;
+  text-align: center;
+}
+
+.projects h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.add-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.add-button:hover {
+  background: #535bf2;
+}
+
+/* The Grid Container */
+.projects-grid {
+  display: grid;
+  /* This creates columns that auto-fit the screen width */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual Project Cards */
+.project-card {
+  background: #1e293b;
+  border-radius: 12px;
+  overflow: hidden; /* Keeps image corners rounded */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+  border-color: #646cff;
+}
+
+/* Project Images */
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Prevents images from looking squished */
+  border-bottom: 2px solid #646cff;
+}
+
+/* Text Content Inside Cards */
+.project-card h3 {
+  padding: 1.5rem 1.5rem 0.5rem;
+  margin: 0;
+  color: #f8fafc;
+}
+
+.project-card p {
+  padding: 0 1.5rem 1rem;
+  color: #94a3b8;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex-grow: 1; /* Ensures text takes up space equally */
+}
+
+.project-card strong {
+  color: #646cff;
+}
+
+.project-form {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-form h2 {
+  margin-bottom: 1rem;
+}
+
+.project-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-form input,
+.project-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: #0f172a;
+  color: white;
+}
+
+.project-form button {
+  padding: 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-form button:hover {
+  background: #535bf2;
+}
+
+.project-actions {
+  padding: 0 1.5rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-actions a,
+.project-actions button {
+  padding: 0.25rem 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.project-actions a:hover,
+.project-actions button:hover {
+  background: #535bf2;
+}
+
+/* ===== SERVICES PAGE STYLES ===== */
+.services-container {
+  padding: 5rem 10%;
+  background-color: #0f172a; /* Dark theme consistency */
+  color: white;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.services-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #646cff;
+}
+
+.add-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.add-button:hover {
+  background: #535bf2;
+}
+
+.service-form {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-form h2 {
+  margin-bottom: 1rem;
+}
+
+.service-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.service-form input,
+.service-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: #0f172a;
+  color: white;
+}
+
+.service-form button {
+  padding: 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.service-form button:hover {
+  background: #535bf2;
+}
+
+/* The Grid */
+.services-grid {
+  display: grid;
+  /* Creates 2 columns on desktop, 1 on mobile */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Individual Service Cards */
+.service-card {
+  background: #1e293b;
+  padding: 2.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover Effect: Card lifts and border glows */
+.service-card:hover {
+  transform: translateY(-10px);
+  background: #25334a;
+  border-color: #646cff;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.service-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #f8fafc;
+}
+
+.service-card p {
+  color: #94a3b8;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.service-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.service-actions a,
+.service-actions button {
+  padding: 0.25rem 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.service-actions a:hover,
+.service-actions button:hover {
+  background: #535bf2;
+}
+
+/* Optional: Add a small accent line under the title */
+.service-card h2::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #646cff;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Responsive: Ensures it looks good on tablets */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ===== USERS PAGE STYLES ===== */
+.users {
+  padding: 4rem 5%;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.users h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.add-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.add-button:hover {
+  background: #535bf2;
+}
+
+.user-form {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-form h2 {
+  margin-bottom: 1rem;
+}
+
+.user-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.user-form input,
+.user-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: #0f172a;
+  color: white;
+}
+
+.user-form button {
+  padding: 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-form button:hover {
+  background: #535bf2;
+}
+
+.users-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.user-card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+}
+
+.user-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user-actions a,
+.user-actions button {
+  padding: 0.25rem 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.user-actions a:hover,
+.user-actions button:hover {
+  background: #535bf2;
+}
+
+/* ===== REFERENCES PAGE STYLES ===== */
+.references {
+  padding: 4rem 5%;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.references h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+.add-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.add-button:hover {
+  background: #535bf2;
+}
+.reference-form {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.reference-form h2 {
+  margin-bottom: 1rem;
+}
+
+.reference-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.reference-form input,
+.reference-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: #0f172a;
+  color: white;
+}
+
+.reference-form button {
+  padding: 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reference-form button:hover {
+  background: #535bf2;
+}
+
+.references-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.reference-card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: left;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.reference-card:hover {
+  transform: translateY(-5px);
+}
+
+.reference-actions {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.reference-actions a,
+.reference-actions button {
+  padding: 0.25rem 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.reference-actions a:hover,
+.reference-actions button:hover {
+  background: #535bf2;
+}
+
+/* ===== AUTH PAGE STYLES ===== */
+.auth-container {
+  padding: 4rem 5%;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  min-height: 60vh;
+}
+
+.auth-form {
+  max-width: 400px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.auth-form input {
+  padding: 0.5rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: #0f172a;
+  color: white;
+}
+
+.auth-form button {
+  padding: 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background: #535bf2;
+}
+
+.error {
+  color: red;
+}
+
+.auth-container p {
+  margin-top: 1rem;
+}
+
+.auth-container a {
+  color: #646cff;
+}
+
+/* ===== HOME PAGE STYLES ===== */
+.hero {
+  height: 90vh; /* Takes up most of the screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.highlight {
+  color: #646cff; /* Vite purple or your brand color */
+}
+
+.hero-content h2 {
+  font-size: 1.8rem;
+  color: #94a3b8; /* Muted gray-blue */
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.mission {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+
+/* The Button */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #535bf2;
+  transform: translateY(-3px); /* Lifts the button slightly */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== ABOUT PAGE STYLES ===== */
+.about {
+  padding: 5rem 10%;
+  background-color: #0f172a; /* Same dark theme */
+  color: white;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Image Styling */
+.about-image img {
+  width: 300px; /* Adjust size as needed */
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px; /* Rounded corners */
+  border: 4px solid #646cff; /* Branding border */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Content Styling */
+.about-content {
+  text-align: left;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #646cff;
+}
+
+.about-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #f8fafc;
+}
+
+.about-content p {
+  line-height: 1.8;
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+/* Resume Button (matching your Hero button) */
+.about-content .btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background-color: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.about-content .btn:hover {
+  background-color: #535bf2;
+  transform: scale(1.05);
+}
+
+/* Responsive: Stacks on mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .about-content {
+    text-align: center;
+  }
+}
+
+/* ===== CONTACT PAGE STYLES ===== */
+.contact {
+  padding: 5rem 10%;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: #646cff;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr; /* Info side is slightly narrower than the form */
+  gap: 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Info Box */
+.contact-info {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  height: fit-content;
+}
+
+.contact-info h3 {
+  margin-bottom: 1.5rem;
+  color: #f8fafc;
+}
+
+.contact-info p {
+  margin: 1rem 0;
+  color: #94a3b8;
+}
+
+.contact-info strong {
+  color: #646cff;
+  display: block; /* Puts label above the value */
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+
+/* Form Styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form input, 
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  background-color: #1e293b;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  font-family: inherit;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Glow effect on focus */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #646cff;
+  box-shadow: 0 0 8px rgba(100, 108, 255, 0.3);
+}
+
+.contact-form .btn {
+  padding: 1rem;
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form .btn:hover {
+  background-color: #535bf2;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+
+/* ===== PROJECT FORM PAGE STYLES ===== */
+.project-form-page {
+  padding: 4rem 5%;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.project-form-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.project-form-page form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-form-page input,
+.project-form-page textarea {
+  padding: 0.5rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: #0f172a;
+  color: white;
+}
+
+.project-form-page button {
+  padding: 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-form-page button:hover {
+  background: #535bf2;
+}
+
+/* ===== REFERENCE FORM PAGE STYLES ===== */
+.reference-form-page {
+  padding: 4rem 5%;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.reference-form-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.reference-form-page form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.reference-form-page input,
+.reference-form-page textarea {
+  padding: 0.5rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: #0f172a;
+  color: white;
+}
+
+.reference-form-page button {
+  padding: 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reference-form-page button:hover {
+  background: #535bf2;
+}
+
+/* ===== SERVICE FORM PAGE STYLES ===== */
+.service-form-page {
+  padding: 5rem 10%;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.service-form-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.service-form-page form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-form-page input,
+.service-form-page textarea {
+  padding: 0.5rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: #0f172a;
+  color: white;
+}
+
+.service-form-page button {
+  padding: 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.service-form-page button:hover {
+  background: #535bf2;
+}
+
+/* ===== USER FORM PAGE STYLES ===== */
+.user-form-page {
+  padding: 4rem 5%;
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+.user-form-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.user-form-page form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.user-form-page input,
+.user-form-page textarea {
+  padding: 0.5rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: #0f172a;
+  color: white;
+}
+
+.user-form-page button {
+  padding: 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-form-page button:hover {
+  background: #535bf2;
+}

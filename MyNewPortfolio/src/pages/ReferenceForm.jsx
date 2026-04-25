@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getReferences, createReference, updateReference } from "../api.js";
-import "./ReferenceForm.css";
 
 function ReferenceForm() {
   const { id } = useParams();

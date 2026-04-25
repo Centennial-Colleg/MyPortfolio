@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext.jsx";
 import { getReferences, deleteReference } from "../api.js";
-import "./References.css";
 
 function ReferencesList() {
   const [references, setReferences] = useState([]);

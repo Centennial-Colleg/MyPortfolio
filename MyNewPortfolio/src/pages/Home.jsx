@@ -1,6 +1,6 @@
- import { Link } from "react-router-dom";
-import "./Home.css";
- function Home() {
+import { Link } from "react-router-dom";
+
+function Home() {
   return (
     <header class="hero">
   <div class="hero-content">

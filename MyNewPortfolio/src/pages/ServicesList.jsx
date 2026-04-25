@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext.jsx";
 import { getServices, deleteService } from "../api.js";
-import "./Services.css";
 
 function ServicesList() {
   const [services, setServices] = useState([]);

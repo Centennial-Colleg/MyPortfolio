@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { getServices, createService, updateService, deleteService } from "../api.js";
-import "./Services.css";
 
 function Services() {
   const [services, setServices] = useState([]);

@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { getProjects, createProject, updateProject, deleteProject } from "../api.js";
-import "./Projects.css";
 
 function Projects() {
   const [projects, setProjects] = useState([]);

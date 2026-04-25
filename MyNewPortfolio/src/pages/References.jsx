@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { getReferences, createReference, updateReference, deleteReference } from "../api.js";
-import "./References.css";
 
 function References() {
   const [references, setReferences] = useState([]);

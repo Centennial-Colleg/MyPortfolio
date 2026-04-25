@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getUsers, createUser, updateUser } from "../api.js";
-import "./UserForm.css";
 
 function UserForm() {
   const { id } = useParams();

@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "../context/AuthContext.jsx";
 import { getProjects, deleteProject } from "../api.js";
-import "./Projects.css";
 
 function ProjectsList() {
   const [projects, setProjects] = useState([]);
