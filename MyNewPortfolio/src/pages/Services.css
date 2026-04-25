@@ -12,6 +12,20 @@
   color: #646cff;
 }
 
+.add-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: #646cff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.add-button:hover {
+  background: #535bf2;
+}
+
 .service-form {
   max-width: 600px;
   margin: 0 auto 3rem;
@@ -100,6 +114,7 @@
   gap: 0.5rem;
 }
 
+.service-actions a,
 .service-actions button {
   padding: 0.25rem 0.5rem;
   background: #646cff;
@@ -107,8 +122,10 @@
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  text-decoration: none;
 }
 
+.service-actions a:hover,
 .service-actions button:hover {
   background: #535bf2;
 }
