@@ -1,15 +1,22 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext.jsx";
 import { getUsers, deleteUser } from "../api.js";
 import "./Users.css";
 
 function UsersList() {
   const [users, setUsers] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { isAuthenticated } = useAuth();
+  const navigate = useNavigate();
 
   useEffect(() => {
+    if (!isAuthenticated) {
+      navigate("/login");
+      return;
+    }
     fetchUsers();
-  }, []);
+  }, [isAuthenticated, navigate]);
 
   const fetchUsers = async () => {
     try {
@@ -34,6 +41,8 @@ function UsersList() {
       }
     }
   };
+
+  if (!isAuthenticated) return null;
 
   if (loading) return <div>Loading...</div>;
 

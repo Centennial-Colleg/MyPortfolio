@@ -1,15 +1,22 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext.jsx";
 import { getProjects, deleteProject } from "../api.js";
 import "./Projects.css";
 
 function ProjectsList() {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { isAuthenticated } = useAuth();
+  const navigate = useNavigate();
 
   useEffect(() => {
+    if (!isAuthenticated) {
+      navigate("/login");
+      return;
+    }
     fetchProjects();
-  }, []);
+  }, [isAuthenticated, navigate]);
 
   const fetchProjects = async () => {
     try {
@@ -34,6 +41,8 @@ function ProjectsList() {
       }
     }
   };
+
+  if (!isAuthenticated) return null;
 
   if (loading) return <div>Loading...</div>;
 

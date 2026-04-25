@@ -28,6 +28,32 @@
   padding: 0;
 }
 
+/* Link Styling */
+.nav-links a {
+  color: #ffffff;                 /* White text */
+  text-decoration: none;          /* Removes underline */
+  font-weight: 500;
+  transition: color 0.3s ease;    /* Smooth color change */
+}
+
+.nav-links a:hover {
+  color: #646cff;                 /* Blue hover color */
+}
+
+.logout-btn {
+  background: #646cff;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.logout-btn:hover {
+  background: #535bf2;
+}
+
 /* Individual Links */
 .nav-links a {
   text-decoration: none;          /* Removes the underline */

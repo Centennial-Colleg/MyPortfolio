@@ -1,15 +1,22 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext.jsx";
 import { getReferences, deleteReference } from "../api.js";
 import "./References.css";
 
 function ReferencesList() {
   const [references, setReferences] = useState([]);
   const [loading, setLoading] = useState(true);
+  const { isAuthenticated } = useAuth();
+  const navigate = useNavigate();
 
   useEffect(() => {
+    if (!isAuthenticated) {
+      navigate("/login");
+      return;
+    }
     fetchReferences();
-  }, []);
+  }, [isAuthenticated, navigate]);
 
   const fetchReferences = async () => {
     try {
@@ -34,6 +41,8 @@ function ReferencesList() {
       }
     }
   };
+
+  if (!isAuthenticated) return null;
 
   if (loading) return <div>Loading...</div>;
 
