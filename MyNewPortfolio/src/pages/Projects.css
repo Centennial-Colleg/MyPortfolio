@@ -65,3 +65,63 @@
 .project-card strong {
   color: #646cff;
 }
+
+.project-form {
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-form h2 {
+  margin-bottom: 1rem;
+}
+
+.project-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-form input,
+.project-form textarea {
+  padding: 0.5rem;
+  border: 1px solid #646cff;
+  border-radius: 4px;
+  background: #0f172a;
+  color: white;
+}
+
+.project-form button {
+  padding: 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-form button:hover {
+  background: #535bf2;
+}
+
+.project-actions {
+  padding: 0 1.5rem 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.project-actions button {
+  padding: 0.25rem 0.5rem;
+  background: #646cff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.project-actions button:hover {
+  background: #535bf2;
+}
